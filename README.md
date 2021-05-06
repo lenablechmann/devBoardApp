@@ -11,7 +11,8 @@ A webapp in OOP Javascript + Sass that lets you track and mark your issues and b
 ## Learning Goals
 - practice OOP + decoupling
 - practice single responsibility principle
-- learn and implement the basics of SASS
+- learn and implement the basics of SASS and possibly bootstrap
+- learn and practice git branching for every small feature
 - make the project as extensible as possible
 
 ## Project Roadmap

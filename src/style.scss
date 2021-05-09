@@ -53,10 +53,16 @@ table {
 }
 
 /*--LAYOUT--*/
+.top-nav {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	height: 10vh;
+}
 
 /*--FONTS AND COLORS--*/
 $font-stack: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
-$color-bg-light: #f4f4f4;
+$color-light: #f4f4f4;
 $color-bg-dark: #4c12a1;
 $color-text-dark: #213038;
 
@@ -64,5 +70,13 @@ $color-text-dark: #213038;
 body {
     font-family: $font-stack;
     color: $color-text-dark;    
-    background-color: $color-bg-light;
+    background-color: $color-light;
+}
+
+.top-nav {
+	background-color: $color-bg-dark;
+	color: $color-light;
+	.app-name {
+		font-size: 2em;
+	}
 }

@@ -57,15 +57,12 @@ table {
 /*--FONTS AND COLORS--*/
 $font-stack: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 $color-bg-light: #f4f4f4;
-$color-dark: rgba(105, 40, 105, 0.067);
+$color-bg-dark: #4c12a1;
+$color-text-dark: #213038;
 
 
 body {
     font-family: $font-stack;
-    color: $color-dark;    
+    color: $color-text-dark;    
     background-color: $color-bg-light;
-}
-
-.testclass {
-	background-color: pink;
 }

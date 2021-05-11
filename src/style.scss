@@ -53,11 +53,30 @@ table {
 }
 
 /*--LAYOUT--*/
+body {
+	display: flex;
+	flex-flow: row wrap;
+}
 .top-nav {
+	order: 1;
+	flex-basis: 100%;
 	display: flex;
 	justify-content: space-around;
 	align-items: center;
 	height: 10vh;
+}
+.side-nav {
+	order: 2;
+	flex-basis: 25%;
+}
+.card-container {
+	order: 3;
+	flex-grow: 1;
+}
+
+footer {
+	order: 4;
+	flex-basis: 100%;
 }
 
 /*--FONTS AND COLORS--*/

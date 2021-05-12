@@ -92,9 +92,29 @@ header {
 	height: fit-content;
 	width: 100%;
 	margin: 0em 2em;
+	display: grid;
+	grid-template-areas: "left top right"
+						 "left btm right";
+	grid-template-columns: 15% auto 15%;
+	grid-template-rows: auto;
 	border: 1px solid purple;
 }
-
+	.card-left {
+		grid-area: left;
+		border: 1px solid green;
+	}
+	.card-right {
+		grid-area: right;
+		border: 1px solid green;
+	}
+	.card-btm {
+		grid-area: btm;
+		border: 1px solid green;
+	}
+	.card-top {
+		grid-area: top;
+		border: 1px solid green;
+	}
 footer {
 	order: 4;
 	flex-basis: 100%;

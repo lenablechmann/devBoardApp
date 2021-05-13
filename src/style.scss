@@ -95,7 +95,7 @@ header {
 	display: grid;
 	grid-template-areas: "left top right"
 						 "left btm right";
-	grid-template-columns: 15% auto 15%;
+	grid-template-columns: 150px auto 150px;
 	grid-template-rows: auto;
 	border: 1px solid purple;
 }
@@ -103,8 +103,13 @@ header {
 		grid-area: left;
 		display: flex;
 		flex-flow: column wrap;
-		align-content: center;
+		align-content: stretch;
 		border: 1px solid green;
+
+		.status-choice {
+			text-align: center;
+			padding: 0.5em 1em;
+		}
 	}
 	.card-right {
 		grid-area: right;

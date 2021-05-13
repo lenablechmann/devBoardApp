@@ -86,7 +86,6 @@ header {
 	flex-flow: row wrap;
 	justify-content: center;
 	padding: 2em 0 2em 0;
-	border: 1px solid green;
 }
 .card {
 	height: fit-content;
@@ -97,31 +96,27 @@ header {
 						 "left btm right";
 	grid-template-columns: 150px auto 150px;
 	grid-template-rows: auto;
-	border: 1px solid purple;
 }
 	.card-left {
 		grid-area: left;
 		display: flex;
 		flex-flow: column wrap;
 		align-content: stretch;
-		border: 1px solid green;
 
 		.status-choice {
 			text-align: center;
 			padding: 0.5em 1em;
+			margin: 1px 0;
 		}
 	}
 	.card-right {
 		grid-area: right;
-		border: 1px solid green;
 	}
 	.card-btm {
 		grid-area: btm;
-		border: 1px solid green;
 	}
 	.card-top {
 		grid-area: top;
-		border: 1px solid green;
 	}
 footer {
 	order: 4;
@@ -137,6 +132,11 @@ footer {
 $font-stack: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
 $color-light: #f4f4f4;
 $color-bg-dark: #4c12a1;
+$color-neutral: rgb(179, 179, 179);
+$color-todo: rgb(250, 136, 108);
+$color-progress: rgb(240, 194, 45);
+$color-review: rgb(86, 216, 228);
+$color-complete: rgb(137, 206, 91);
 $color-text-dark: #213038;
 
 
@@ -153,6 +153,35 @@ body {
 	.app-name {
 		font-size: 2em;
 	}
+}
+.card {
+	border: 2px solid $color-todo;
+	border-radius: 10px;
+
+	.card-top {
+		border-left: 2px solid $color-neutral;
+		border-right: 2px solid $color-neutral;
+	}
+	.card-btm {
+		border-left: 2px solid $color-neutral;
+		border-right: 2px solid $color-neutral;
+	}
+
+	.todo--unchecked {
+		border-bottom: 2px solid $color-todo;
+	}
+	.progress--unchecked {
+		border-bottom: 2px solid $color-progress;
+		border-top: 2px solid $color-progress;
+	}
+	.review--unchecked {
+		border-bottom: 2px solid $color-review;
+		border-top: 2px solid $color-review;
+	}
+	.completed--unchecked {
+		border-top: 2px solid $color-complete;
+	}
+
 }
 
 .side-nav {

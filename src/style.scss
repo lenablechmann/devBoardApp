@@ -137,6 +137,10 @@ footer {
 	justify-content: center;
 	align-items: center;
 	border: 1px solid purple;
+
+	.github-logo {
+		height: 1.5em;
+	}
 }
 
 /*--FONTS AND COLORS--*/
@@ -163,6 +167,9 @@ body {
 	color: $color-light;
 	.app-name {
 		font-size: 2em;
+	}
+	.menu-icon {
+		height: 2em;
 	}
 }
 .card {

@@ -62,7 +62,6 @@ header {
 	flex-basis: 100%;
 	display: flex;
 	height: 8vh;
-	border: 1px solid blue;
 }
 .top-nav {
 	flex-grow: 1;
@@ -74,7 +73,6 @@ header {
 	order: 2;
 	flex-basis: 18%;
 	height: 85vh;
-	border: 1px solid red;
 }
 .project-container {
 	padding: 2em 0 0 2em;
@@ -138,14 +136,9 @@ footer {
 	align-items: center;
 
 	a {
-		display: flex;
-		justify-content: center;
-		align-items: center;
+		padding-left: 0.5em;
 	}
-	.github-logo {
-		height: 1.5em;
-		opacity: 0.6;
-	}
+
 }
 
 /*--FONTS AND COLORS--*/
@@ -210,4 +203,22 @@ body {
 .side-nav {
 	background-color: rgba($color-bg-dark, 0.9);
 	color: $color-light;
+
+	.project-list {
+		list-style-type: circle;
+	}
+}
+
+footer {
+	background-color: rgba($color-bg-dark, 0.9);
+	color: $color-light;
+
+	.github-link:link, .github-link:visited {
+		color: $color-light;
+		text-decoration: none;
+	}
+	.github-link:hover, .github-link:active {
+		color: $color-light;
+		text-decoration: underline;
+	}
 }

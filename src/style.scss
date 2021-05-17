@@ -136,10 +136,15 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	border: 1px solid purple;
 
+	a {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+	}
 	.github-logo {
 		height: 1.5em;
+		opacity: 0.6;
 	}
 }
 

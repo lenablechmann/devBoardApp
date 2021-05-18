@@ -66,8 +66,11 @@ header {
 .top-nav {
 	flex-grow: 1;
 	display: flex;
-	justify-content: center;
+	justify-content: space-between;
 	align-items: center;
+	* {
+		padding: 1em;
+	}
 }
 .side-nav {
 	order: 2;
@@ -75,19 +78,32 @@ header {
 	height: 85vh;
 }
 .project-container {
-	padding: 1em 0 0 1em;
+	padding: 2em 1em 1em 2em;
 
 	.project-list {
-		margin: 0em 1em;
 
 		* {
 			border: 1px solid red;
-			padding: 1em;
+			margin: 0.3em;
+			padding: 0.4em;
 		}
 	}
 
 	.add-project {
 		display: flex;
+		justify-content: center;
+		flex-grow: 1;
+		padding: 0;
+
+		.plus-sign {
+			display: flex;
+			align-content: center;
+		}
+		.new-project {
+			display: flex;
+			align-items: center;
+			justify-content: center;
+		}
 	}
 }
 .card-container {
@@ -96,12 +112,17 @@ header {
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
+	align-content: flex-start;
 	padding: 2em 0 2em 0;
+
+	.active-project {
+		height: fit-content;
+	}
 }
 .card {
 	height: fit-content;
 	width: 100%;
-	margin: 0em 2em;
+	margin: 1em 2em;
 	display: grid;
 	grid-template-areas: "left top right"
 						 "left btm right";
@@ -178,10 +199,15 @@ body {
 	color: $color-light;
 	.app-name {
 		font-size: 2em;
+		font-weight: 600;
 	}
 	.menu-icon {
 		height: 2em;
 	}
+}
+.active-project {
+	font-size: 1.3em;
+	font-weight: 600;
 }
 .card {
 	border: 2px solid $color-todo;
@@ -219,6 +245,10 @@ body {
 
 	.project-list {
 		font-size: 1.2em;
+
+		.project--selected {
+			font-weight: bold;
+		}
 	}
 	.add-project {
 		background-color: $color-light;
@@ -226,6 +256,10 @@ body {
 		border-radius: 5px;
 		font-family: $font-stack;
 		font-size: 1.1em;
+
+		.plus-sign {
+			font-size: 1.2em;
+		}
 	}
 }
 

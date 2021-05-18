@@ -75,7 +75,20 @@ header {
 	height: 85vh;
 }
 .project-container {
-	padding: 2em 0 0 2em;
+	padding: 1em 0 0 1em;
+
+	.project-list {
+		margin: 0em 1em;
+
+		* {
+			border: 1px solid red;
+			padding: 1em;
+		}
+	}
+
+	.add-project {
+		display: flex;
+	}
 }
 .card-container {
 	order: 3;
@@ -145,7 +158,7 @@ footer {
 $font-stack: 'Open Sans', Arial, Helvetica, sans-serif;;
 $color-light: #f4f4f4;
 $color-bg-dark: #4c12a1;
-$color-neutral: rgb(179, 179, 179);
+$color-neutral: #E5E5E5;
 $color-todo: rgb(250, 136, 108);
 $color-progress: rgb(240, 194, 45);
 $color-review: rgb(86, 216, 228);
@@ -201,16 +214,23 @@ body {
 }
 
 .side-nav {
-	background-color: rgba($color-bg-dark, 0.9);
-	color: $color-light;
+	background-color: $color-neutral;
+	color: $color-text-dark;
 
 	.project-list {
-		list-style-type: circle;
+		font-size: 1.2em;
+	}
+	.add-project {
+		background-color: $color-light;
+		color: $color-text-dark;
+		border-radius: 5px;
+		font-family: $font-stack;
+		font-size: 1.1em;
 	}
 }
 
 footer {
-	background-color: rgba($color-bg-dark, 0.9);
+	background-color: $color-bg-dark;
 	color: $color-light;
 
 	.github-link:link, .github-link:visited {

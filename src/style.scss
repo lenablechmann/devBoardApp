@@ -83,7 +83,6 @@ header {
 	.project-list {
 
 		* {
-			border: 1px solid red;
 			margin: 0.3em;
 			padding: 0.4em;
 		}
@@ -94,15 +93,21 @@ header {
 		justify-content: center;
 		flex-grow: 1;
 		padding: 0;
+		margin-top: 1.5em;
 
 		.plus-sign {
 			display: flex;
-			align-content: center;
+			align-self: center;
+			justify-self: center;
+			margin: 0;
+			padding-right: 0.2em;
 		}
 		.new-project {
 			display: flex;
 			align-items: center;
 			justify-content: center;
+			margin: 0;
+			padding-left: 0.2em;
 		}
 	}
 }
@@ -151,7 +156,6 @@ header {
 		img {
 			width: 1.8em;
 			padding: 1.2em 1em;
-			border: 1px solid red;
 
 		}
 	}
@@ -246,19 +250,36 @@ body {
 	.project-list {
 		font-size: 1.2em;
 
+		.project-selector:hover, .project-selector:active {
+			background-color: rgba($color-light, 0.6);
+			border-radius: 5px;
+			cursor: pointer;
+		}
+
 		.project--selected {
 			font-weight: bold;
 		}
 	}
 	.add-project {
-		background-color: $color-light;
 		color: $color-text-dark;
-		border-radius: 5px;
+		background-color: rgba($color-light, 0.7);
+		border-radius: 5%;
 		font-family: $font-stack;
 		font-size: 1.1em;
 
 		.plus-sign {
-			font-size: 1.2em;
+			font-size: 1.3em;
+		}
+	}
+	.add-project:hover {
+		background-color: $color-light;
+		border-radius: 5px;
+		font-family: $font-stack;
+		cursor: pointer;
+		color: $color-bg-dark;
+
+		.plus-sign {
+			font-weight: bold;
 		}
 	}
 }

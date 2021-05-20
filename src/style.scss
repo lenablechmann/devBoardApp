@@ -54,17 +54,17 @@ table {
 
 /*--LAYOUT--*/
 body {
-	display: flex;
-	flex-flow: row wrap;
+	display: grid;
+	grid-template-areas: "topNav topNav"
+						 "sideNav cards"
+						 "btmNav btmNav";
+	grid-template-columns: 14vw auto;
+	grid-template-rows: 13vh auto 8vh;
 }
 header {
-	order: 1;
-	flex-basis: 100%;
-	display: flex;
-	height: 8vh;
+	grid-area: topNav;
 }
 .top-nav {
-	flex-grow: 1;
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
@@ -73,9 +73,7 @@ header {
 	}
 }
 .side-nav {
-	order: 2;
-	flex-basis: 18%;
-	height: 85vh;
+	grid-area: sideNav;
 }
 .project-container {
 	padding: 2em 1em 1em 2em;
@@ -112,8 +110,7 @@ header {
 	}
 }
 .card-container {
-	order: 3;
-	flex-grow: 1;
+	grid-area: cards;
 	display: flex;
 	flex-flow: row wrap;
 	justify-content: center;
@@ -166,9 +163,7 @@ header {
 		grid-area: top;
 	}
 footer {
-	order: 4;
-	flex-basis: 100%;
-	height: 7vh;
+	grid-area: btmNav;
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -210,8 +205,8 @@ body {
 	}
 }
 .active-project {
-	font-size: 1.3em;
-	font-weight: 600;
+	font-size: 1.6em;
+	font-weight: 900;
 }
 .card {
 	border: 2px solid $color-todo;

@@ -58,7 +58,7 @@ body {
 	grid-template-areas: "topNav topNav"
 						 "sideNav cards"
 						 "btmNav btmNav";
-	grid-template-columns: 14vw auto;
+	grid-template-columns: 300px auto;
 	grid-template-rows: 13vh auto 8vh;
 }
 header {
@@ -71,6 +71,9 @@ header {
 	* {
 		padding: 1em;
 	}
+	.menu-icon {
+		visibility: hidden;
+	}	
 }
 .side-nav {
 	grid-area: sideNav;
@@ -173,6 +176,22 @@ footer {
 	}
 
 }
+
+@media only screen and (max-width: 900px) {
+	body {
+		display: flex;
+		flex-flow: column wrap;
+	}
+	.side-nav {
+		visibility: hidden;
+		height: 0px;
+		width: 0px;
+	}
+	.menu-icon {
+		visibility: visible;
+	}	
+}
+
 
 /*--FONTS AND COLORS--*/
 $font-stack: 'Open Sans', Arial, Helvetica, sans-serif;;

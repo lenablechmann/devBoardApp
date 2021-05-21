@@ -187,9 +187,12 @@ footer {
 		height: 0px;
 		width: 0px;
 	}
-	.menu-icon {
-		visibility: visible;
-	}	
+	.top-nav {
+		justify-content: center;
+		.menu-icon {
+			visibility: visible;
+		}	
+	}
 }
 
 

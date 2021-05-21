@@ -208,6 +208,9 @@ body {
 	font-size: 1.6em;
 	font-weight: 900;
 }
+.card-container {
+	background-color: $color-light;
+}
 .card {
 	border: 2px solid $color-todo;
 	border-radius: 10px;

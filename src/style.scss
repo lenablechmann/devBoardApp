@@ -131,7 +131,7 @@ header {
 	display: grid;
 	grid-template-areas: "left top right"
 						 "left btm right";
-	grid-template-columns: 150px auto 150px;
+	grid-template-columns: 150px auto 100px;
 	grid-template-rows: auto;
 }
 	.card-left {
@@ -191,6 +191,9 @@ footer {
 		.menu-icon {
 			visibility: visible;
 		}	
+	}
+	.card {
+		grid-template-columns: 125px auto 50px;
 	}
 }
 

@@ -136,7 +136,7 @@ header {
 }
 	.card-left {
 		grid-area: left;
-		display: flex;
+		display: grid;
 		flex-flow: column wrap;
 		align-content: stretch;
 
@@ -174,7 +174,6 @@ footer {
 	a {
 		padding-left: 0.5em;
 	}
-
 }
 
 @media only screen and (max-width: 900px) {

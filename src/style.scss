@@ -161,9 +161,19 @@ header {
 	}
 	.card-btm {
 		grid-area: btm;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		padding: 0.5em 1em;
+
+		* {
+			padding: 0.5em 1em;
+			margin: 0em 0.5em;
+		}
 	}
 	.card-top {
 		grid-area: top;
+		padding: 0.5em 1em;
 	}
 footer {
 	grid-area: btmNav;
@@ -246,6 +256,19 @@ body {
 	.card-btm {
 		border-left: 2px solid $color-neutral;
 		border-right: 2px solid $color-neutral;
+
+		.card-tag--blocker {
+			border: 1px solid red;
+			border-radius: 5%;
+		}
+		.card-tag--dependent {
+			border: 1px solid green;
+			border-radius: 5%;
+		}
+		.card-tag--independent {
+			border: 1px solid blue;
+			border-radius: 5%;
+		}
 	}
 
 	.todo--unchecked {

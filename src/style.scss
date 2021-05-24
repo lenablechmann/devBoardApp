@@ -144,6 +144,7 @@ header {
 			text-align: center;
 			padding: 0.5em 1em;
 			margin: 1px 0;
+			cursor: pointer;
 		}
 	}
 	.card-right {
@@ -284,6 +285,19 @@ body {
 	}
 	.completed--unchecked {
 		border-top: 2px solid $color-complete;
+	}
+
+	.todo--unchecked:hover {
+		background-color: rgba($color-todo, 0.3);
+	}
+	.progress--unchecked:hover {
+		background-color: rgba($color-progress, 0.3);
+	}
+	.review--unchecked:hover {
+		background-color: rgba($color-review, 0.3);
+	}
+	.completed--unchecked:hover {
+		background-color: rgba($color-complete, 0.3);
 	}
 
 }

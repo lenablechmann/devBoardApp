@@ -308,23 +308,21 @@ body {
 		border-left: 2px solid $color-neutral;
 		border-right: 2px solid $color-neutral;
 
-		.card-tag--blocker {
-			background-color: $color-tag-block;
-			color: $color-light;
+		* {
+			cursor: default;
 			border-radius: 10px;
 			font-weight: 500;
+			color: $color-light;
+		}
+
+		.card-tag--blocker {
+			background-color: $color-tag-block;
 		}
 		.card-tag--dependent {
 			background-color: $color-tag-dependent;
-			color: $color-light;
-			border-radius: 10px;
-			font-weight: 500;
 		}
 		.card-tag--independent {
 			background-color: $color-tag-independent;
-			color: $color-light;
-			border-radius: 10px;
-			font-weight: 500;
 		}
 	}
 

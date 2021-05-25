@@ -285,6 +285,32 @@ body {
 		.completed--unchecked:hover {
 			background-color: rgba($color-complete, 0.3);
 		}
+		.todo--checked {
+			border-bottom: 2px solid $color-todo;
+			background-color: $color-todo;
+			color: $color-text-dark;
+			font-weight: 700;
+		}
+		.progress--checked {
+			border-bottom: 2px solid $color-progress;
+			border-top: 2px solid $color-progress;
+			background-color: $color-progress;
+			color: $color-text-dark;
+			font-weight: 700;
+		}
+		.review--checked {
+			border-bottom: 2px solid $color-complete;
+			border-top: 2px solid $color-complete;
+			background-color: $color-complete;
+			color: $color-text-dark;
+			font-weight: 700;
+		}
+		.completed--checked {
+			border-top: 2px solid $color-review;
+			background-color: $color-review;
+			color: $color-text-dark;
+			font-weight: 700;
+		}
 	}
 
 	.card-top {

@@ -15,7 +15,7 @@
   \**********************/
 /***/ (() => {
 
-eval("function component() {\n    const element = document.createElement('div');\n  \n    // Lodash, currently included via a script, is required for this line to work\n    element.innerHTML = 'hi'\n  \n    return element;\n  }\n  \n  document.body.appendChild(component());\n\n//# sourceURL=webpack://devboardapp/./src/index.js?");
+eval("function component() {\n    const element = document.createElement('div');\n  \n    element.innerHTML = 'hi'\n  \n    return element;\n  }\n  \n  document.body.appendChild(component());\n\n//# sourceURL=webpack://devboardapp/./src/index.js?");
 
 /***/ })
 

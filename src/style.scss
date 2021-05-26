@@ -69,10 +69,11 @@ header {
 	justify-content: space-between;
 	align-items: center;
 	* {
-		padding: 1em;
+		margin: 1em;
 	}
 	.menu-icon {
 		visibility: hidden;
+		height: 0px;
 	}	
 }
 .side-nav {
@@ -203,9 +204,20 @@ footer {
 	}
 	.top-nav {
 		justify-content: center;
+
+		* {
+			padding: 0;
+			margin: 1em 0;
+		}
 		.menu-icon {
 			visibility: visible;
+			height: 2.5em;
+			margin-left: 1em;
+			margin-top: 1.2em;
 		}	
+		.menu-icon:hover {
+			cursor: pointer;
+		}
 	}
 	.card {
 		grid-template-columns: 125px auto 50px;
@@ -241,9 +253,6 @@ body {
 	.app-name {
 		font-size: 2em;
 		font-weight: 600;
-	}
-	.menu-icon {
-		height: 2em;
 	}
 }
 .active-project {

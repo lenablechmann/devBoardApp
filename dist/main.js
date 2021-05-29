@@ -26,7 +26,7 @@ eval("__webpack_require__.r(__webpack_exports__);\n/* harmony export */ __webpac
   \**********************/
 /***/ ((__unused_webpack_module, __webpack_exports__, __webpack_require__) => {
 
-eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hamburgerMenu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hamburgerMenu.js */ \"./src/hamburgerMenu.js\");\n\n\n(0,_hamburgerMenu_js__WEBPACK_IMPORTED_MODULE_0__.default)();\n\n\nfunction component() {\n    const element = document.createElement('div');\n  \n    element.innerHTML = 'hi'\n  \n    return element;\n  }\n  \n  document.body.appendChild(component());\n\n//# sourceURL=webpack://devboardapp/./src/index.js?");
+eval("__webpack_require__.r(__webpack_exports__);\n/* harmony import */ var _hamburgerMenu_js__WEBPACK_IMPORTED_MODULE_0__ = __webpack_require__(/*! ./hamburgerMenu.js */ \"./src/hamburgerMenu.js\");\n\n\n// make sure the DOM is fully loaded first.\ndocument.addEventListener('DOMContentLoaded', function(){\n    const hamburgerMenu = document.getElementById('hamburger-menu');\n    hamburgerMenu.addEventListener('click', function(){\n        (0,_hamburgerMenu_js__WEBPACK_IMPORTED_MODULE_0__.default)();\n    });\n});\n\n\n\n//# sourceURL=webpack://devboardapp/./src/index.js?");
 
 /***/ })
 

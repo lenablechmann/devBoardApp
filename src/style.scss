@@ -79,6 +79,12 @@ header {
 .side-nav {
 	grid-area: sideNav;
 }
+.hamburger-dropdown {
+	display: none;
+	* {
+		display: none;
+	}
+}
 .project-container {
 	padding: 2em 1em 1em 2em;
 
@@ -218,6 +224,27 @@ footer {
 		.menu-icon:hover {
 			cursor: pointer;
 		}
+	}
+	.hamburger-dropdown {
+		display: block;
+		border: 1px solid rgb(30, 255, 0);
+
+		.project-list-dropdown {
+			display: flex;
+			flex-flow: column wrap;
+			justify-content: center;
+			align-items: center;
+			
+			width: 100vw;
+			height: fit-content;
+
+			* {
+				display: block;
+				padding: 1em;
+				margin: 0.1em;
+			}
+		}
+
 	}
 	.card {
 		grid-template-columns: 125px auto 50px;

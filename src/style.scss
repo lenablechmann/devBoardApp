@@ -227,7 +227,6 @@ footer {
 	}
 	.hamburger-dropdown {
 		display: block;
-		border: 1px solid rgb(30, 255, 0);
 
 		.project-list-dropdown {
 			display: flex;
@@ -238,10 +237,12 @@ footer {
 			width: 100vw;
 			height: fit-content;
 
-			* {
+			li {
 				display: block;
 				padding: 1em;
 				margin: 0.1em;
+				width: 100%;
+				text-align: center;
 			}
 		}
 
@@ -280,6 +281,18 @@ body {
 	.app-name {
 		font-size: 2em;
 		font-weight: 600;
+	}
+}
+.project-list-dropdown {
+	color: $color-bg-dark;
+	font-family: $font-stack;
+	font-size: 1.2em;
+	border-bottom: 2px solid $color-bg-dark;
+
+	li:active, li:hover {
+		font-weight: 700;
+		background-color: rgba($color-bg-dark, 0.2);
+		cursor: pointer;
 	}
 }
 .active-project {

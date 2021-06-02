@@ -68,22 +68,20 @@ header {
 	display: flex;
 	justify-content: space-between;
 	align-items: center;
+	cursor: default;
 	* {
 		margin: 1em;
 	}
 	.menu-icon {
-		visibility: hidden;
-		height: 0px;
+		display: none;
 	}	
+	.project-list-dropdown {
+		display: none;
+	}
+
 }
 .side-nav {
 	grid-area: sideNav;
-}
-.hamburger-dropdown {
-	display: none;
-	* {
-		display: none;
-	}
 }
 .project-container {
 	padding: 2em 1em 1em 2em;
@@ -216,7 +214,7 @@ footer {
 			margin: 1em 0;
 		}
 		.menu-icon {
-			visibility: visible;
+			display: block;
 			height: 2.5em;
 			margin-left: 1em;
 			margin-top: 1.2em;
@@ -225,26 +223,22 @@ footer {
 			cursor: pointer;
 		}
 	}
-	.hamburger-dropdown {
-		display: block;
+	.project-list-dropdown {
+		display: flex;
+		flex-flow: column wrap;
+		justify-content: center;
+		align-items: center;
+		width: 100vw;
+		height: fit-content;
 
-		.project-list-dropdown {
-			display: flex;
-			flex-flow: column wrap;
-			justify-content: center;
-			align-items: center;
-			width: 100vw;
-			height: fit-content;
-
-			li {
-				display: block;
-				padding: 1em;
-				width: 100%;
-				text-align: center;
-			}
+		li {
+			display: block;
+			padding: 1em;
+			width: 100%;
+			text-align: center;
 		}
-
 	}
+
 	.card {
 		grid-template-columns: 125px auto 50px;
 	}

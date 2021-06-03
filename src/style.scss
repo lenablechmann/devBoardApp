@@ -75,11 +75,10 @@ header {
 	.menu-icon {
 		display: none;
 	}	
+}
 	.project-list-dropdown {
 		display: none;
 	}
-
-}
 .side-nav {
 	grid-area: sideNav;
 }
@@ -279,7 +278,12 @@ body {
 	color: $color-bg-dark;
 	font-family: $font-stack;
 	font-size: 1.2em;
-	border-bottom: 2px solid $color-bg-dark;
+	border-bottom: 1px solid rgba($color-bg-dark, 0.3);
+	
+	* {
+		border-top: 1px solid rgba($color-bg-dark, 0.2);
+		border-bottom: 1px solid rgba($color-bg-dark, 0.2);
+	}
 
 	li:active, li:hover {
 		font-weight: 700;

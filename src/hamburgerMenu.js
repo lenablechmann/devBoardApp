@@ -1,6 +1,6 @@
 export default function createHamburgerMenu() {
     console.log("im creating a hamburger menu");
-    const headerTag = document.getElementById('header-tag');
+    const topNav = document.getElementsByClassName("top-nav");
     const hamburgerHTML = `
         <section class="hamburger-dropdown">
             <ul class="project-list-dropdown">
@@ -12,4 +12,5 @@ export default function createHamburgerMenu() {
                 </li>
         </section>
     `;
+    topNav[0].insertAdjacentHTML('afterend', hamburgerHTML);
 }

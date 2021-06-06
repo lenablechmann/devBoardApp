@@ -17,4 +17,9 @@ export default function createHamburgerMenu() {
         topNav[0].insertAdjacentHTML('afterend', hamburgerHTML);
     }
 
+    else {
+        hamburger[0].innerHTML = '';
+        hamburger[0].remove();
+    }
+
 }

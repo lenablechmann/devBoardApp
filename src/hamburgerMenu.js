@@ -1,7 +1,6 @@
-export default function createHamburgerMenu() {
+export function createHamburgerMenu() {
     const topNav = document.getElementsByClassName("top-nav");
     const hamburger = document.getElementsByClassName("hamburger-dropdown")
-    console.log(hamburger);
     if (hamburger.length < 1) {
         const hamburgerHTML = `
             <section class="hamburger-dropdown">
@@ -17,7 +16,11 @@ export default function createHamburgerMenu() {
         topNav[0].insertAdjacentHTML('afterend', hamburgerHTML);
     }
 
-    else {
+}
+
+export function deleteHamburgerMenu() {
+    const hamburger = document.getElementsByClassName("hamburger-dropdown")
+    if (hamburger.length >= 1) {
         hamburger[0].innerHTML = '';
         hamburger[0].remove();
     }

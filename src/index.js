@@ -9,6 +9,12 @@ document.addEventListener('DOMContentLoaded', function(){
         dropdownMenu.createHamburgerMenu();
         const hamburger = document.getElementsByClassName("hamburger-dropdown");
     });
+
+    // a different approach to the dropdown menu, Plan:
+    // first create the html for the dropdown menu dynamically (will take json)
+    // create onhover classes for the dropdown menu
+    // eventlistener onclick for showing this menu
+    // eventlistener for outside clicks to delete the show class.
     
-});
+}); 
 

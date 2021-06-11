@@ -1,4 +1,6 @@
 export function createHamburgerMenu() {
+
+    // first create the html for the dropdown menu dynamically (will take json in the end)
     const topNav = document.getElementsByClassName("top-nav");
     const hamburger = document.getElementsByClassName("hamburger-dropdown")
     if (hamburger.length < 1) {

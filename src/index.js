@@ -11,7 +11,7 @@ document.addEventListener('DOMContentLoaded', function(){
     });
 
     // a different approach to the dropdown menu, Plan:
-    // first create the html for the dropdown menu dynamically (will take json)
+    // first create the html for the dropdown menu dynamically (will take json in the end)
     // create onhover classes for the dropdown menu
     // eventlistener onclick for showing this menu
     // eventlistener for outside clicks to delete the show class.

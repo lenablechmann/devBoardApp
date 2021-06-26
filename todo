@@ -1,0 +1,9 @@
+- create a workflow for this project:
+	- webpack for the js
+	- scss to sass
+	- run tests (create a simple test case for this)
+- automate the workflow via a script ideally with python
+- create a pop up that asks for cookies and their acceptance
+- look up how to replace local storage with firebase
+- log in with firebase: how would it work?
+

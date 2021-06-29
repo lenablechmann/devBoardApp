@@ -1,0 +1,23 @@
+{
+  "name": "devboardapp",
+  "version": "1.0.0",
+  "description": "Development organization board.",
+  "main": "webpack.config.js",
+  "scripts": {
+    "scss": "sass --watch --no-source-map src/style.scss dist/css/style.css"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/lenablechmann/devBoardApp.git"
+  },
+  "keywords": [
+    "issues",
+    "devboard"
+  ],
+  "author": "Lena Blechmann",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/lenablechmann/devBoardApp/issues"
+  },
+  "homepage": "https://github.com/lenablechmann/devBoardApp#readme"
+}

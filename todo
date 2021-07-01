@@ -1,4 +1,4 @@
-- find out why the images aren't showing
+[x] find out why the images aren't showing
 - create a workflow for this project:
 	- webpack for the js
 	- scss to sass
@@ -13,3 +13,4 @@ CURRENT WORKFLOW COMMANDS:
 npx webpack
 live-sever	// in dist folder to run the page
 npm scss	// to compile scss to css
+npm run test

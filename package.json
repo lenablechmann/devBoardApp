@@ -4,6 +4,7 @@
   "description": "Development organization board.",
   "main": "webpack.config.js",
   "scripts": {
+    "test": "jest --verbose src/tests/",
     "scss": "sass --watch --no-source-map src/style.scss dist/css/style.css"
   },
   "repository": {
@@ -21,6 +22,7 @@
   },
   "homepage": "https://github.com/lenablechmann/devBoardApp#readme",
   "devDependencies": {
+    "jest": "^27.0.6",
     "webpack": "^5.41.1",
     "webpack-cli": "^4.7.2"
   }

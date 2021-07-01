@@ -1,3 +1,4 @@
+- find out why the images aren't showing
 - create a workflow for this project:
 	- webpack for the js
 	- scss to sass
@@ -7,3 +8,8 @@
 - look up how to replace local storage with firebase
 - log in with firebase: how would it work?
 
+
+CURRENT WORKFLOW COMMANDS:
+npx webpack
+live-sever	// in dist folder to run the page
+npm scss	// to compile scss to css

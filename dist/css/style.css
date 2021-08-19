@@ -58,6 +58,10 @@ table {
 }
 
 /*--LAYOUT--*/
+html {
+  scroll-behavior: smooth;
+}
+
 body {
   display: grid;
   grid-template-areas: "topNav topNav" "sideNav cards" "btmNav btmNav";

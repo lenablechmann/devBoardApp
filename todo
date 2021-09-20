@@ -1,16 +1,22 @@
 [x] find out why the images aren't showing
-- create a workflow for this project:
+- add "a new issue" button .add-issue--btn
+- (not a priority) create a workflow for this project:
 	- webpack for the js
 	- scss to sass
 	- run tests (create a simple test case for this)
-- automate the workflow via a script ideally with python
 - create a pop up that asks for cookies and their acceptance
-- look up how to replace local storage with firebase
-- log in with firebase: how would it work?
+- store data as json for todo
+- save in local storage
 
 
 CURRENT WORKFLOW COMMANDS:
 npx webpack
-live-sever	// in dist folder to run the page
+live-server	// in dist folder to run the page
 npm run scss	// to compile scss to css
 npm run test
+
+
+git:
+git add .
+git commit -m "your message"
+git push -u origin main

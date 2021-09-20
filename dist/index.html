@@ -1,123 +1,129 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>DevBoard</title>
-    <script src="./main.js"></script>
-    <link rel="stylesheet" href="css/style.css">
-    <link rel="preconnect" href="https://fonts.gstatic.com">
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet"> 
-</head>
-<body>
-    <header id="header-tag">
-        <nav class="top-nav">
-            <div class="app-name">DevBoard</div>
-            <!--invisible on desktop but will be there on mobile, with a dropdown-->
-            <img src="/images/menu.svg" alt="list all projects" class="menu-icon" id="hamburger-menu">
-        </nav>
-        <section class="hamburger-dropdown hide">
-            <ul class="project-list-dropdown">
-                <li class="project-link" id="project-1">Project 1</li>
-                <li class="project-link" id="project-2">Project 2</li>
-                <li class="project-link" id="project-3">Project 3</li>
-                <li class="create-project"> 
-                    New Project
-                </li>
-        </section>
-    </header>
-    <aside class="side-nav">
-        <section class="project-container">
-            <ul class="project-list">
-                <li class="project-selector project--selected" id="project-1">Project 1</li>
-                <li class="project-selector" id="project-2">Project 2</li>
-                <li class="project-selector" id="project-3">Project 3</li>
-                <li class="add-project"> 
-                    <div class="plus-sign">&#43;</div>
-                    <div class="new-project">New Project</div>
-                </li>
-            </ul>
-        </section>
-    </aside>
-    <section class="card-container">
-        <!-- Card can be organized with the grid-->
-        <div class="active-project" id="project-232">PROJECT 1</div>
-        <div class="card" id="issue-3435"> 
-            <div class="card-left">
-                <div class="status-choice todo--checked">To Do</div>
-                <div class="status-choice progress--unchecked">In Progress</div>
-                <div class="status-choice review--unchecked">Review</div>
-                <div class="status-choice completed--unchecked">Completed</div>
-            </div>
-            <div class="card-top">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias perspiciatis nam quis sequi sunt ab eum, sapiente quae incidunt, officiis dolores ad dignissimos quasi mollitia omnis inventore! Suscipit, a eaque.</div>
-            <div class="card-btm"> 
-                <div class="card-tag--blocker">Blocker</div>
-                <div class="card-tag--dependent">Dependent</div>
-                <div class="card-tag--independent">Independent</div>
-            </div>
-            <div class="card-right">
-                <img src="/images/edit.svg" alt="edit the task" class="edit-icon">
-                <img src="/images/trash.svg" alt="trash the task" class="trash-icon">
-            </div>
-        </div>
-        <div class="card"> 
-            <div class="card-left">
-                <div class="status-choice todo--unchecked">To Do</div>
-                <div class="status-choice progress--unchecked">In Progress</div>
-                <div class="status-choice review--checked">Review</div>
-                <div class="status-choice completed--unchecked">Completed</div>
-            </div>
-            <div class="card-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, mollitia veniam pariatur distinctio architecto ipsa, repellendus ea quo ipsam optio culpa similique atque quidem dolore quam nihil totam tempore excepturi.</div>
-            <div class="card-btm"> 
-                <div class="card-tag--blocker">Blocker</div>
-            </div>
-            <div class="card-right">
-                <img src="/images/edit.svg" alt="edit the task" class="edit-icon">
-                <img src="/images/trash.svg" alt="trash the task" class="trash-icon">
-            </div>
-        </div>
-        <div class="card"> 
-            <div class="card-left">
-                <div class="status-choice todo--unchecked">To Do</div>
-                <div class="status-choice progress--unchecked">In Progress</div>
-                <div class="status-choice review--unchecked">Review</div>
-                <div class="status-choice completed--checked">Completed</div>
-            </div>
-            <div class="card-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, mollitia veniam pariatur distinctio architecto ipsa, repellendus ea quo ipsam optio culpa similique atque quidem dolore quam nihil totam tempore excepturi.</div>
-            <div class="card-btm"> 
-                <div class="card-tag--blocker">Blocker</div>
-                <div class="card-tag--independent">Independent</div>
-            </div>
-            <div class="card-right">
-                <img src="/images/edit.svg" alt="edit the task" class="edit-icon">
-                <img src="/images/trash.svg" alt="trash the task" class="trash-icon">
-            </div>
-        </div>
-        <div class="card"> 
-            <div class="card-left">
-                <div class="status-choice todo--unchecked">To Do</div>
-                <div class="status-choice progress--checked">In Progress</div>
-                <div class="status-choice review--unchecked">Review</div>
-                <div class="status-choice completed--unchecked">Completed</div>
-            </div>
-            <div class="card-top">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias perspiciatis nam quis sequi sunt ab eum, sapiente quae incidunt, officiis dolores ad dignissimos quasi mollitia omnis inventore! Suscipit, a eaque.</div>
-            <div class="card-btm"> 
-                <div class="card-tag--blocker">Blocker</div>
-                <div class="card-tag--dependent">Dependent</div>
-            </div>
-            <div class="card-right">
-                <img src="/images/edit.svg" alt="edit the task" class="edit-icon">
-                <img src="/images/trash.svg" alt="trash the task" class="trash-icon">
-            </div>
-        </div>
+	<head>
+		<meta charset="UTF-8">
+		<meta http-equiv="X-UA-Compatible" content="IE=edge">
+		<meta name="viewport" content="width=device-width, initial-scale=1.0">
+		<title>DevBoard</title>
+		<script src="./main.js"></script>
+		<link rel="stylesheet" href="css/style.css">
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;1,700&display=swap" rel="stylesheet"> 
+	</head>
+	<body>
+		<header id="header-tag">
+			<nav class="top-nav">
+				<div class="app-name">DevBoard</div>
+				<!--invisible on desktop but will be there on mobile, with a dropdown-->
+				<img src="/images/menu.svg" alt="list all projects" class="menu-icon" id="hamburger-menu">
+			</nav>
+			<section class="hamburger-dropdown hide">
+				<ul class="project-list-dropdown">
+					<li class="project-link" id="project-1">Project 1</li>
+					<li class="project-link" id="project-2">Project 2</li>
+					<li class="project-link" id="project-3">Project 3</li>
+					<li class="create-project"> 
+						New Project
+					</li>
+			</section>
+		</header>
+		<aside class="side-nav">
+			<section class="project-container">
+				<ul class="project-list">
+					<li class="project-selector project--selected" id="project-1">Project 1</li>
+					<li class="project-selector" id="project-2">Project 2</li>
+					<li class="project-selector" id="project-3">Project 3</li>
+					<li class="add-project"> 
+						<div class="plus-sign">&#43;</div>
+						<div class="new-project">New Project</div>
+					</li>
+				</ul>
+			</section>
+		</aside>
+		<section class="card-container">
+			<!-- each card can be organized with the grid-->
+			<div>
+				<div class="active-project" id="project-232">PROJECT 1</div>
+				<div class="add-issue--container">
+					<div class="add-issue--btn"> Add a New Issue </div>
+				</div>
+			</div>
 
-    </section>
-    <footer>
-        <p>View it on:</p>
-        <a href="https://github.com/lenablechmann/devBoardApp" class="github-link">
-            GitHub
-        </a>
-    </footer>
-</body>
+			<div class="card" id="issue-3435"> 
+				<div class="card-left">
+					<div class="status-choice todo--checked">To Do</div>
+					<div class="status-choice progress--unchecked">In Progress</div>
+					<div class="status-choice review--unchecked">Review</div>
+					<div class="status-choice completed--unchecked">Completed</div>
+				</div>
+				<div class="card-top">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias perspiciatis nam quis sequi sunt ab eum, sapiente quae incidunt, officiis dolores ad dignissimos quasi mollitia omnis inventore! Suscipit, a eaque.</div>
+				<div class="card-btm"> 
+					<div class="card-tag--blocker">Blocker</div>
+					<div class="card-tag--dependent">Dependent</div>
+					<div class="card-tag--independent">Independent</div>
+				</div>
+				<div class="card-right">
+					<img src="/images/edit.svg" alt="edit the task" class="edit-icon">
+					<img src="/images/trash.svg" alt="trash the task" class="trash-icon">
+				</div>
+			</div>
+			<div class="card"> 
+				<div class="card-left">
+					<div class="status-choice todo--unchecked">To Do</div>
+					<div class="status-choice progress--unchecked">In Progress</div>
+					<div class="status-choice review--checked">Review</div>
+					<div class="status-choice completed--unchecked">Completed</div>
+				</div>
+				<div class="card-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, mollitia veniam pariatur distinctio architecto ipsa, repellendus ea quo ipsam optio culpa similique atque quidem dolore quam nihil totam tempore excepturi.</div>
+				<div class="card-btm"> 
+					<div class="card-tag--blocker">Blocker</div>
+				</div>
+				<div class="card-right">
+					<img src="/images/edit.svg" alt="edit the task" class="edit-icon">
+					<img src="/images/trash.svg" alt="trash the task" class="trash-icon">
+				</div>
+			</div>
+			<div class="card"> 
+				<div class="card-left">
+					<div class="status-choice todo--unchecked">To Do</div>
+					<div class="status-choice progress--unchecked">In Progress</div>
+					<div class="status-choice review--unchecked">Review</div>
+					<div class="status-choice completed--checked">Completed</div>
+				</div>
+				<div class="card-top">Lorem ipsum dolor sit amet consectetur adipisicing elit. Magni, mollitia veniam pariatur distinctio architecto ipsa, repellendus ea quo ipsam optio culpa similique atque quidem dolore quam nihil totam tempore excepturi.</div>
+				<div class="card-btm"> 
+					<div class="card-tag--blocker">Blocker</div>
+					<div class="card-tag--independent">Independent</div>
+				</div>
+				<div class="card-right">
+					<img src="/images/edit.svg" alt="edit the task" class="edit-icon">
+					<img src="/images/trash.svg" alt="trash the task" class="trash-icon">
+				</div>
+			</div>
+			<div class="card"> 
+				<div class="card-left">
+					<div class="status-choice todo--unchecked">To Do</div>
+					<div class="status-choice progress--checked">In Progress</div>
+					<div class="status-choice review--unchecked">Review</div>
+					<div class="status-choice completed--unchecked">Completed</div>
+				</div>
+				<div class="card-top">Lorem ipsum, dolor sit amet consectetur adipisicing elit. Alias perspiciatis nam quis sequi sunt ab eum, sapiente quae incidunt, officiis dolores ad dignissimos quasi mollitia omnis inventore! Suscipit, a eaque.</div>
+				<div class="card-btm"> 
+					<div class="card-tag--blocker">Blocker</div>
+					<div class="card-tag--dependent">Dependent</div>
+				</div>
+				<div class="card-right">
+					<img src="/images/edit.svg" alt="edit the task" class="edit-icon">
+					<img src="/images/trash.svg" alt="trash the task" class="trash-icon">
+				</div>
+			</div>
+
+		</section>
+		<footer>
+			<p>View it on:</p>
+			<a href="https://github.com/lenablechmann/devBoardApp" class="github-link">
+				GitHub
+			</a>
+		</footer>
+	</body>
 </html>

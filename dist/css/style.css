@@ -296,6 +296,9 @@ body {
 .card-container {
   background-color: #f4f4f4;
 }
+.card-container .add-issue--btn {
+  color: #89ce5b;
+}
 
 .card {
   border: 2px solid #fa886c;

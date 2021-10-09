@@ -124,6 +124,13 @@ header {
 	}
 }
 .card-container {
+
+	.add-issue--btn {
+		padding: 0.7em 0.5em 0.7em 0.5em;
+		margin: 0.6em 0em 1em 0em;
+		text-align: center;
+	}
+
 	grid-area: cards;
 	display: flex;
 	flex-flow: row wrap;
@@ -133,6 +140,8 @@ header {
 
 	.active-project {
 		height: fit-content;
+		padding-left: 0.5em;
+		padding-right: 0.5em;
 	}
 }
 .card {
@@ -310,7 +319,15 @@ body {
 	background-color: $color-light;
 
 	.add-issue--btn {
-		color: $color-complete;
+		font-size: 1em;
+		font-weight: 400;
+		color: $color-light;
+		background-color: $color-bg-dark;
+		border-radius: 10px;
+		cursor: pointer;
+	}
+	.add-issue--btn:active, .add-issue--btn:hover {
+		background-color: lighten($color-bg-dark, 10%);
 	}
 }
 .card {

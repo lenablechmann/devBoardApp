@@ -131,8 +131,15 @@ header {
   align-content: flex-start;
   padding: 2em 0 2em 0;
 }
+.card-container .add-issue--btn {
+  padding: 0.7em 0.5em 0.7em 0.5em;
+  margin: 0.6em 0em 1em 0em;
+  text-align: center;
+}
 .card-container .active-project {
   height: fit-content;
+  padding-left: 0.5em;
+  padding-right: 0.5em;
 }
 
 .card {
@@ -297,7 +304,15 @@ body {
   background-color: #f4f4f4;
 }
 .card-container .add-issue--btn {
-  color: #89ce5b;
+  font-size: 1em;
+  font-weight: 400;
+  color: #f4f4f4;
+  background-color: #4c12a1;
+  border-radius: 10px;
+  cursor: pointer;
+}
+.card-container .add-issue--btn:active, .card-container .add-issue--btn:hover {
+  background-color: #6217cf;
 }
 
 .card {

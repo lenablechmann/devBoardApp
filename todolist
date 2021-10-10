@@ -1,5 +1,6 @@
 [x] find out why the images aren't showing
-- add "a new issue" button .add-issue--btn
+[x] add "a new issue" button
+[] pop up base for new issue
 - (not a priority) create a workflow for this project:
 	- webpack for the js
 	- scss to sass
